@@ -2,21 +2,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-links a');
     const sections = document.querySelectorAll('section');
 
-    // Smooth Scroll
+    // Smooth Scroll - Only intercept for same-page anchors
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = link.getAttribute('href');
-            const targetHeader = document.querySelector(targetId);
+            const href = link.getAttribute('href');
             
-            window.scrollTo({
-                top: targetHeader.offsetTop,
-                behavior: 'smooth'
-            });
+            // Only intercept if href starts with # and we're not on a different page
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                const targetHeader = document.querySelector(href);
+                
+                if (targetHeader) {
+                    window.scrollTo({
+                        top: targetHeader.offsetTop,
+                        behavior: 'smooth'
+                    });
 
-            // Update active link
-            navLinks.forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
+                    // Update active link
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                }
+            }
+            // If it's something like index.html#hero, let it follow the link normally
         });
     });
 
