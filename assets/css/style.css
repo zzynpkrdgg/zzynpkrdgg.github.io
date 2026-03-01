@@ -299,3 +299,46 @@ section {
         padding: 0 1.5rem;
     }
 }
+
+/* Resume Button Float */
+.resume-btn {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: linear-gradient(135deg, var(--accent-magenta), var(--accent-blue));
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 0, 255, 0.4);
+    z-index: 2000;
+    transition: all var(--transition-fast);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.resume-btn i {
+    font-size: 1.2rem;
+}
+
+.resume-btn:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 0, 255, 0.6);
+    color: white;
+    border-color: white;
+}
+
+@media (max-width: 992px) {
+    .resume-btn {
+        top: auto;
+        bottom: 2rem;
+        right: 1.5rem;
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
