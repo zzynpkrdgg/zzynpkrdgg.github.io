@@ -68,12 +68,13 @@ style.textContent = `
     }
 
     section {
-        opacity: 0;
+        opacity: 0.1; /* Start slightly visible to ensure no 'blank' screen */
         transition: opacity 1s ease, transform 1s ease;
     }
 
     section.fade-in {
         opacity: 1;
+        transform: translateY(0);
     }
 `;
 document.head.appendChild(style);
