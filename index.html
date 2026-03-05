@@ -22,9 +22,7 @@
             <ul class="nav-links">
                 <li><a href="#hero" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#games">Projects</a></li>
+                <li><a href="#games">Game Projects</a></li>
                 <li><a href="#tools">Tools</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -160,21 +158,19 @@
                 <h2 class="section-title">About Me</h2>
                 <div class="grid" style="grid-template-columns: 1fr;">
                     <div class="card blue no-hover" style="padding: 3rem;">
+                        <!-- Integrated Education -->
+                        <div style="margin-bottom: 2.5rem; border-left: 3px solid var(--accent-blue); padding-left: 1.5rem;">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--accent-blue);">Education</h3>
+                            <p style="font-size: 1.1rem; font-weight: 700;">Ankara Üniversitesi</p>
+                            <p style="color: var(--text-primary); font-weight: 500;">Yazılım Mühendisliği</p>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">3. Sınıf (2023 - Günümüz)</p>
+                        </div>
+
                         <p style="font-size: 1.2rem; margin-bottom: 2rem;">
                             I'm a passionate 3rd-year Software Engineering student focused on merging technical excellence with creative storytelling. My journey in game development is driven by a desire to engineering seamless gameplay mechanics and artistic visuals.
                         </p>
                         <p style="color: var(--text-secondary); margin-bottom: 2rem;">
                             Beyond coding, I have a deep interest in digital illustration and UI/UX design, which allows me to approach problems from both a logical and aesthetic perspective. I am particularly interested in how custom data structures and optimized algorithms can be leveraged to create more dynamic and engaging player experiences.
-                        </p>
-                        
-                        <h3 style="font-size: 1.3rem; margin-top: 1rem; margin-bottom: 1.5rem; color: var(--accent-pink);">Interests & Hobbies</h3>
-                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">
-                            Oyun geliştirme, dijital illüstrasyon, piksel sanatı ve kullanıcı deneyimi tasarımı ile ilgileniyorum. Karmaşık sistemleri basit ve estetik çözümlere dönüştürmeyi seviyorum.
-                        </p>
-
-                        <h3 style="font-size: 1.3rem; margin-top: 1rem; margin-bottom: 1.5rem; color: var(--accent-yellow);">Goals</h3>
-                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">
-                            Yazılım mühendisliği prensiplerini oyun mekanikleriyle birleştirerek oyuncuları içine çeken dünyalar yaratmayı ve yenilikçi araçlar geliştirmeyi hedefliyorum.
                         </p>
                         
                         <h3 style="font-size: 1.3rem; margin-top: 1rem; margin-bottom: 1.5rem; color: var(--accent-blue);">Professional Experience</h3>
@@ -187,44 +183,13 @@
                                 <li>Contributed to the software quality assurance (SQA) process by identifying, documenting and reporting bugs.</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="education" class="education">
-            <div class="container">
-                <h2 class="section-title">Education</h2>
-                <div class="card blue no-hover" style="padding: 3rem;">
-                    <div class="education-item" style="border-left: 2px solid var(--accent-blue); padding-left: 1.5rem;">
-                        <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Ankara Üniversitesi</h3>
-                        <p class="highlight" style="font-weight: 600; font-size: 1.1rem; color: var(--accent-blue);">Yazılım Mühendisliği</p>
-                        <p style="color: var(--text-secondary);">3. Sınıf (2023 - Günümüz)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2 class="section-title">Skills</h2>
-                <div class="grid">
-                    <div class="card pink no-hover">
-                        <div class="card-content">
-                            <h3 style="color: var(--accent-magenta);"><i class="fas fa-code" style="margin-right: 10px;"></i> Technical Beceriler</h3>
-                            <p>Unity, C#, HTML, CSS, JavaScript, Python, SQL</p>
-                        </div>
-                    </div>
-                    <div class="card blue no-hover">
-                        <div class="card-content">
-                            <h3 style="color: var(--accent-blue);"><i class="fas fa-tools" style="margin-right: 10px;"></i> Araçlar</h3>
-                            <p>VS Code, Git, GitHub, Aseprite, Figma, Gauge, Appium</p>
-                        </div>
-                    </div>
-                    <div class="card pink no-hover" style="border-color: var(--accent-yellow);">
-                        <div class="card-content">
-                            <h3 style="color: var(--accent-yellow);"><i class="fas fa-language" style="margin-right: 10px;"></i> Diller</h3>
-                            <p>Türkçe (Anadil), İngilizce (İleri Seviye)</p>
+                        <div class="skills-mini" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <span style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem; border: 1px solid var(--accent-blue);">Unity & C#</span>
+                            <span style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem; border: 1px solid var(--accent-magenta);">Data Structures</span>
+                            <span style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem; border: 1px solid var(--accent-pink); shadow: var(--glow-pink);">Aseprite & Pixel Art</span>
+                            <span style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem; border: 1px solid var(--accent-yellow);">Frontend Development</span>
+                            <span style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem; border: 1px solid #2ECC71;">Mobile Test Automation (Appium/BDD)</span>
                         </div>
                     </div>
                 </div>
